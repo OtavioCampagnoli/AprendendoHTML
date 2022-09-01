@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="" <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário: Exemplo 02</title>
+    <link rel="stylesheet" href="estilo02.css"   
+</head>
+
+<body>
+        <form action="entradaResposta.html" method="post">
+        <left>
+            <h2>Questionário gamer</h2>
+
+            <p>
+                Responda o questionário abaixo 
+                selecionando qual plataforma e jogos você joga.
+            </p>
+            
+            <div id="grupoPlataforma">
+            <h3>Qual plataforma você joga?</h3>
+            <label>PC</label>
+            <input type="checkbox" name="plataforma[]" value="pc">
+            <br><br>
+            <label>Playstation</label>
+            <input type="checkbox" name="plataforma[]" value="ps">
+            <br><br>
+            <label>Xbox</label>
+            <input type="checkbox" name="plataforma[]" value="xbox">
+            <br><br>
+            <label>Nintendo</label>
+            <input type="checkbox" name="plataforma[]" value="nintendo">
+            </div>
+
+            <div id="grupoGenero">
+            <h3>Qual é o seu seu gênero preferido?</h3>
+            <label >Ação</label>
+            <input type="checkbox" name="genero[]" value="acao">
+            <br><br>
+            <label >FPS</label>
+            <input type="checkbox" name="genero[]" value="fps">
+            <br><br>
+            <label >Plataforma</label>
+            <input type="checkbox" name="genero[]" value="plataforma">
+            <br><br>
+            <label >Aventura</label>
+            <input type="checkbox" name="genero[]" value="acao">
+            <br><br>
+            <button type="submit" name="button_enviar" id="enviarForm">Enviar formulário</button>
+            </div>
+        </left>
+
+
+    </form>
+
+</body>
+
+</html>
