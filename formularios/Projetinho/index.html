@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Site de carros</title>
+</head>
+<style>
+ #TituloPrincipal{
+    text-align: center;
+    align-items: center;
+    font-size: 55px;
+    color: royalblue;
+    font-family: 'Times New Roman', Times, serif;
+ }
+#textocabeçalho{
+    text-align: center;
+    align-items: center;
+    color: royalblue;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+    </style>
+<body>
+
+    <header>
+        <div class="titulo">
+            <h1 id="TituloPrincipal">Análise de cadastro</h1>
+            <p id="textocabeçalho">Preencha os campos abaixo e analisaremos seus dados.<br>
+                Se tudo estiver correto ligaremos para marcar uma visita à sua loja.</p>
+        </div>
+    </header>
+
+    <form action="cadastro.html" method="post"></form>
+
+    
+    <fieldset>
+    <div class="dadosUsuario">
+        <legend>Dados do usuário</legend>
+        <div id="name">
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" required placeholder="Informe o seu nome completo" minlength="3">
+        </div>
+        <div id="dataNascimento">
+            <label for="dataNascimento"> Data Nascimento: </label> <br>
+            <input type="date" name="dataNascimento" required>
+        </div>
+        <div id="telefone">
+            <label for="telefone">Telefone: </label> <br>
+            <input type="tel" name="telefone" required placeholder="(XX) XXXXX-XXXX" minlength="11" maxlength="11">
+        </div>
+    </div>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>CNH</legend>
+        <div id="numeroCNH">
+            <label for="numeroCNH">Número da CHN </label> <br>
+            <input type="number" name="numeroCNH" required max="9" placeholder="Informe o número da CNH"> <br>
+        </div>
+        <div id="numeroCNH">
+            <label for="validadeCNH">Validade: </label> <br>
+            <input type="date" name="validadeCNH">
+        </div>
+    </fieldset>
+
+        <!--Adicionei o campo Rg e o Campo Cpf, usando sua estrutura mesmo, teria varios outros jeitos mas esse e eficaz(Dica: acha um meio de colocar uma validação em hdtml )-->
+    <fieldset>
+        <legend>RG</legend>
+        <div id="numeroRg">
+            <label for="numeroRg">Número do Rg </label> <br>
+            <input type="number" name="numeroRg" required max="9" placeholder="Informe o número do Rg"> <br>
+        </div>
+        <div id="numeroRg">
+            <label for="validadeRg">Validade: </label> <br>
+            <input type="date" name="Rg">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>CPF</legend>
+        <div id="numeroCpf">
+            <label for="numeroCpf">Número do Rg </label> <br>
+            <input type="number" name="numeroCpf" required max="9" placeholder="Informe o número do cpf"> <br>
+        </div>
+        <div id="numeroCpf">
+            <label for="validadeCpf">Validade: </label> <br>
+            <input type="date" name="Cpf">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Carro</legend>
+        <div class="modeloCarro">
+            <label for="modeloCarro">Modelo do carro: </label><br>
+            <select name="carro" id="selectModel" required> 
+                <option value="default" disabled selected>Selecione o carro</option>
+                <optgroup label="Chevrolet">
+                    <option value="onix">Onix</option>
+                    <option value="cruze">Cruze</option>
+                    <option value="equinox">Equinox</option>
+                    <option value="camaro">Camaro</option>
+                    <option value="spinActiv">Spin Activ</option>
+                </optgroup>
+                <optgroup label="Honda">
+                    <option value="city">City</option>
+                    <option value="hrv">HRV</option>
+                    <option value="civic">Civic</option>
+                    <option value="fit">Fit</option>
+                    <option value="crv">CRV</option>
+                </optgroup>
+                <optgroup label="Fiat">
+                    <option value="palio">Palio</option>
+                    <option value="pulse">Pulse</option>
+                    <option value="cronos">Cronos</option>
+                    <option value="mobi">Mobi</option>
+                    <option value="toro">Toro</option>
+                </optgroup>
+                <optgroup label="Volkswagen">
+                    <option value="gol">Gol</option>
+                    <option value="jetta">Jetta</option>
+                    <option value="voyage">Voyage</option>
+                    <option value="polo">Polo</option>
+                    <option value="amarok">Amarok</option>
+                </optgroup>
+                <optgroup label="Ferrari">
+                    <option value="palio">458 Italia</option>
+                    <option value="pulse">488 GTB</option>
+                    <option value="cronos">Califórnia</option>
+                    <option value="mobi">La Ferrari</option>
+                    <option value="toro">Roma</option>
+                </optgroup>
+            </select>
+        </div>
+    </fieldset>
+    <br>
+    <button type="submit">Enviar dados</button>
+</body>
+
+</html>
